@@ -39,8 +39,8 @@ class ImageTransformer:
         Gets the color in the source image corresponding to the given point... which need not be an integer. If these
         (r,c) coordinates are out of bounds, return DEFAULT_COLOR.
         See "Interpolation" section of the Transforms video for the "H" algorithm....
-        :param r:
-        :param c:
+        :param r: row (a float)
+        :param c: column (a float)
         :return: an ndarray with 3 numbers 0-1.
         """
         num_rows,num_cols,depth = self.source_image.shape
@@ -49,7 +49,7 @@ class ImageTransformer:
 
             # ---------------------------------------------------
             # TODO: You write this! Find what result_color should be.
-            # note that if you are looking for the color at row 3, column 5, you can say "self.source_image[3,5]" and
+            #  note that if you are looking for the color at row 3, column 5, you can say "self.source_image[3,5]" and
             #   this will be a 3-element (b,g,r) list.
 
             pass # replace this line.
